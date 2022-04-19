@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+</head>
+<body>
+
+<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0">Modulo 6 S.A.</a>
+      <ul class="navbar-nav px-3">
+      </ul>
+    </nav>
+    
+<div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Examinador de Hojas</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column">
+                       
+              <li class="nav-item">
+                <a class="nav-link" href="movimiento_page">
+                  <span data-feather="file"></span>
+                  Movimiento
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="empleado_page">
+                  <span data-feather="shopping-cart"></span>
+                  Empleado
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="producto_page">
+                  <span data-feather="users"></span>
+                  Producto
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lote_page">
+                  <span data-feather="bar-chart-2"></span>
+                  Lote
+                </a>
+              </li>
+             </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span></span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+            </ul>
+          </div>
+        </nav>
+        
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+
+	<div class="jumbotron" th:fragment="tables-manager-movimiento">
+		<h1>Mantenedor de Bodega</h1>
+	</div>
+	
+	<div class="jumbotron" th:fragment="tables-manager-empleado"><h1>Mantenedor de Bodega</h1></div>
+	<div class="jumbotron" th:fragment="tables-manager-producto"><h1>Mantenedor de Bodega</h1></div>
+    <div class="jumbotron" th:fragment="tables-manager-lote"><h1>Mantenedor de Bodega</h1></div>
+   
+	<div class="btn-group" th:fragment="tables-manager-menu" style="display:none">>
+		<button type="button" class="btn btn-primary"
+			onClick="location.href = 'movimiento_page'">MOVIMIENTO</button>
+			
+			
+			<button type="button" class="btn btn-primary"
+			onClick="location.href = 'empleado_page'">EMPLEADO</button>
+			
+			
+		<button type="button" class="btn btn-primary"
+			onClick="location.href = 'producto_page'">PRODUCTO</button>
+			
+			
+			<button type="button" class="btn btn-primary"
+			onClick="location.href = 'lote_page'">LOTE</button>
+
+	</div>
+	</main>
+	</div>
+	</div>
+</body>
+</html>
